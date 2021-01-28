@@ -23,9 +23,9 @@ This is my implementation of the [Battlesnake API](https://docs.battlesnake.com/
 
 2. In Visual Studio Code press `Strg` + `Shift` + `P` to start the command palette and enter `>ngrok: start`
 
-3. Spezify a Port (probably `8080`)
+3. Specify a Port (probably `8080`)
 
-4. Copy the ngrok URL (this we have to use later)
+4. Copy the ngrok URL (this we have to use later should look like `https://124798972d41.ngrok.io/`)
 
 5. Hit the `run` button your Battlesnake server will start and you should see the following:
 
