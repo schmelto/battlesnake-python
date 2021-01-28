@@ -1,6 +1,6 @@
-# A Simple [Battlesnake](http://play.battlesnake.com) Written in Python
+# schmelto-[Battlesnake](http://play.battlesnake.com) written in Python
 
-This is a basic implementation of the [Battlesnake API](https://docs.battlesnake.com/references/api). It's a great starting point for anyone wanting to program their first Battlesnake using Python. It comes ready to use with [Repl.it](https://repl.it) and provides instructions below for getting started. It can also be deployed to [Heroku](https://heroku.com), or any other cloud provider you'd like.
+This is my implementation of the [Battlesnake API](https://docs.battlesnake.com/references/api).
 
 ### Technologies Used
 
@@ -10,34 +10,29 @@ This is a basic implementation of the [Battlesnake API](https://docs.battlesnake
 
 ## Prerequisites
 
+* [Visual Studio Code](https://code.visualstudio.com/)
 * [Battlesnake Account](https://play.battlesnake.com)
-* [Repl.it Account](https://repl.it)
+* [ngrok](https://marketplace.visualstudio.com/items?itemName=philnash.ngrok-for-vscode)
 * [GitHub Account](https://github.com) (Optional)
 
-## Running Your Battlesnake on [Repl.it](https://repl.it)
+## Running local in Visual Studio Code with ngrok
 
 [![Run on Repl.it](https://repl.it/badge/github/BattlesnakeOfficial/starter-snake-python)](https://repl.it/github/BattlesnakeOfficial/starter-snake-python)
 
-1. Login to your [Repl.it](https://repl.it) account.
+1. Install [Visual Studio Code](https://code.visualstudio.com/), [Python](https://www.python.org/) (with [cerrypy](https://cherrypy.org/)) and install [ngrok](https://marketplace.visualstudio.com/items?itemName=philnash.ngrok-for-vscode) for Visual Studio Code
 
-2. Click the 'Run on Repl.it' button above, or visit the following URL: https://repl.it/github/BattlesnakeOfficial/starter-snake-python.
+2. In Visual Studio Code press `Strg` + `Shift` + `P` to start the command palette and enter `>ngrok: start`
 
-3. You should see your Repl being initialized - this might take a few moments to complete.
+3. Spezify a Port (probably `8080`)
 
-4. Once your Repl is ready to run, click `Run ▶️` at the top of the screen. You should see CherryPy (and any other dependencies) being installed. Once installation is complete, your Battlesnake server will start and you should see the following:
+4. Copy the ngrok URL (this we have to use later)
+
+5. Hit the `run` button your Battlesnake server will start and you should see the following:
 
     ```
     Starting Battlesnake Server...
     ENGINE Serving on http://0.0.0.0:8080
     ```
-
-5. Above the terminal window you'll see the live output from your Battlesnake server, including its URL. That URL will be the URL used to create your Battlesnake in the next step. If you visit that URL in your browser, you should see text similar to this:
-
-    ```
-    {"apiversion": "1", "author": "", "color": "#888888", "head": "default", "tail": "default"}
-    ```
-
-This means your Battlesnake is running correctly on Repl.it.
 
 **At this point your Battlesnake is live and ready to enter games!**
 
@@ -93,9 +88,9 @@ See the [Battlesnake Game Rules](https://docs.battlesnake.com/references/rules) 
 
 ### Updating Your Battlesnake
 
-After making changes to your Battlesnake, you can restart your Repl to have the change take effect (or in many cases your Repl will restart automatically).
+After making changes to your Battlesnake, you can restart the script to have the change take effect.
 
-Once the Repl has restarted you can [create a new game](https://play.battlesnake.com/account/games/create/) with your Battlesnake to watch your latest changes in action.
+Once it has restarted you can [create a new game](https://play.battlesnake.com/account/games/create/) with your Battlesnake to watch your latest changes in action.
 
 **At this point you should feel comfortable making changes to your code and starting new Battlesnake games to test those changes!**
 
@@ -117,7 +112,7 @@ Here are some simple goals to help you develop your Battlesnake early on. Comple
 Once you have completed these steps you'll be ready to compete live against other Battlesnakes and start exploring and implementing more complex strategies.
 
 
-### Helpful Tips
+<!-- ### Helpful Tips
 
 * Keeping your Repl open in a second window while games are running is helpful for watching server activity and debugging any problems with your Battlesnake.
 
@@ -126,28 +121,28 @@ Once you have completed these steps you'll be ready to compete live against othe
 * Review the [Battlesnake API Docs](https://docs.battlesnake.com/references/api) to learn what information is provided with each command.
 
 * When viewing a Battlesnake game you can pause playback and step forward/backward one frame at a time. If you review your logs at the same time, you can see what decision your Battlesnake made on each turn.
+ -->
 
 
-
-## Joining a Battlesnake Arena
+<!-- ## Joining a Battlesnake Arena
 
 Once you've made your Battlesnake behave and survive on its own, you can enter it into the [Global Battlesnake Arena](https://play.battlesnake.com/arena/global) to see how it performs against other Battlesnakes worldwide.
 
-Arenas will regularly create new games and rank Battlesnakes based on their results. They're a good way to get regular feedback on how well your Battlesnake is performing, and a fun way to track your progress as you develop your algorithm.
+Arenas will regularly create new games and rank Battlesnakes based on their results. They're a good way to get regular feedback on how well your Battlesnake is performing, and a fun way to track your progress as you develop your algorithm. -->
 
 
 
-## (Optional) Using a Cloud Provider
+<!-- ## (Optional) Using a Cloud Provider
 
 As your Battlesnake gets more complex, it might make sense to move it to a dedicated hosting provider such as Heroku or AWS. We suggest choosing a platform you're familiar with, or one you'd be interested in learning more about.
 
-If you have questions or ideas, our developer community on [Slack](https://play.battlesnake.com/slack) and [Discord](https://play.battlesnake.com/discord) will be able to help out.
+If you have questions or ideas, our developer community on [Slack](https://play.battlesnake.com/slack) and [Discord](https://play.battlesnake.com/discord) will be able to help out. -->
 
 
-
+<!-- 
 ## (Optional) Running Your Battlesnake Locally
 
-Eventually you might want to run your Battlesnake server locally for faster testing and debugging. You can do this by installing [Python 3.8](https://www.python.org/downloads/) and running:
+Eventually you might want to run your Battlesnake server locally for faster testing and debugging. You can do this by installing [Python](https://www.python.org/downloads/) and running:
 
 ```shell
 python server.py
@@ -156,7 +151,7 @@ python server.py
 **Note:** You cannot create games on [play.battlesnake.com](https://play.battlesnake.com) using a locally running Battlesnake unless you install and use a port forwarding tool like [ngrok](https://ngrok.com/).
 
 
----
+--- -->
 
 
 ### Questions?
