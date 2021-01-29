@@ -1,0 +1,35 @@
+{"game":
+    {
+        "id": "5d8d122c-2452-46cc-9098-9152bb6b02d2",
+        "ruleset":
+            {
+                "name": "solo",
+                "version": "v1.0.17"
+            },
+        "timeout": 500
+    },
+        "turn": 0,
+        "board": {  
+                    "height": 11,
+                    "width": 11,
+                    "snakes": [{"id": "gs_S4Q94TrgrrBQf4hFRDdSbtvV",
+                                "name": "1schmelto",
+                                "latency": "",
+                                "health": 100, 
+                                "body": [{"x": 9, "y": 5}, {"x": 9, "y": 5}, {"x": 9, "y": 5}],
+                                "head": {"x": 9, "y": 5},
+                                "length": 3, "shout": ""}],
+                                "food": [{"x": 8, "y": 6}, {"x": 5, "y": 5}
+                                ],
+                    "hazards": []
+                },
+        "you": {"id": "gs_S4Q94TrgrrBQf4hFRDdSbtvV",
+                "name": "1schmelto",
+                "latency": "",
+                "health": 100,
+                "body": [{"x": 9, "y": 5}, {"x": 9, "y": 5}, {"x": 9, "y": 5}],
+                "head": {"x": 9, "y": 5},
+                "length": 3,
+                "shout": ""
+            }
+}
