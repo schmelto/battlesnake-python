@@ -2,6 +2,9 @@ import os
 import random
 import cherrypy
 from snake import *
+from directions import *
+
+snakeId = "72ad0c75-244b-4e30-9169-4584cf4fee28"
 
 class Battlesnake(object):
     @cherrypy.expose
@@ -46,8 +49,9 @@ class Battlesnake(object):
         for snake in data["board"]["snakes"]:
             snakes.append(Snake(snake))
 
-        print(snakes)
-
+        mySnake = snakes[0] # TODO: get snake by ID
+        directions = Directions()
+        foods = Foods(data['food'], wantFood)
 
         print(f"MOVE: {move}")
         return {"move": move}
