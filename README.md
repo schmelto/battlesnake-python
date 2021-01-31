@@ -25,7 +25,11 @@ This is my implementation of the [Battlesnake API](https://docs.battlesnake.com/
 
 3. Specify a Port (probably `8080`)
 
+![ngrok start](./assets/ngrok_start.gif)
+
 4. Copy the ngrok URL (this we have to use later should look like `https://124798972d41.ngrok.io/`)
+
+![ngrok url](./assets/ngrok_url.gif)
 
 5. Hit the `run` button your Battlesnake server will start and you should see the following:
 
