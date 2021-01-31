@@ -51,7 +51,6 @@ class Battlesnake(object):
 
         mySnake = snakes[0] # TODO: get snake by ID
         directions = Directions()
-        foods = Foods(data['food'], wantFood)
 
         print(f"MOVE: {move}")
         return {"move": move}
