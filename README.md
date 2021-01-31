@@ -17,8 +17,6 @@ This is my implementation of the [Battlesnake API](https://docs.battlesnake.com/
 
 ## Running local in Visual Studio Code with ngrok
 
-[![Run on Repl.it](https://repl.it/badge/github/BattlesnakeOfficial/starter-snake-python)](https://repl.it/github/BattlesnakeOfficial/starter-snake-python)
-
 1. Install [Visual Studio Code](https://code.visualstudio.com/), [Python](https://www.python.org/) (with [cerrypy](https://cherrypy.org/)) and install [ngrok](https://marketplace.visualstudio.com/items?itemName=philnash.ngrok-for-vscode) for Visual Studio Code
 
 2. In Visual Studio Code press `Strg` + `Shift` + `P` to start the command palette and enter `>ngrok: start`
