@@ -73,10 +73,10 @@ def move():
 
 
 
-    print "Direction = " + directions.toString()
+    # print "Direction = " + directions.toString()
 
     move = directions.bestDirection()
-    print "Move =" + move
+    # print "Move =" + move
     return {
         'move': move,
         'taunt': str(getTaunt())

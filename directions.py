@@ -5,9 +5,6 @@ class Directions:
         self.right = 100
         self.left = 100
 
-    def toString(self):
-        return 'N:'+str(self.up) + 'S:'+str(self.down) + 'E:'+str(self.right) + 'W:'+str(self.left)
-
     def bestDirection(self):
         bestDir = "up"
         bestVal = 0
@@ -27,5 +24,10 @@ class Directions:
         if self.left > bestVal:
             bestVal = self.left
             bestDir = "left"
+        
+        print("up ", self.up)
+        print("down ", self.down)
+        print("left ", self.left)
+        print("right ", self.right)
 
         return bestDir

@@ -1,8 +1,8 @@
 import os
-import random
 import cherrypy
 from snake import *
 from directions import *
+from walls import *
 
 snakeId = "72ad0c75-244b-4e30-9169-4584cf4fee28"
 
@@ -43,7 +43,6 @@ class Battlesnake(object):
         # Choose a random direction to move in
         # possible_moves = ["up", "down", "left", "right"]
         # move = random.choice(possible_moves)
-        move = "up"
 
         snakes = []
         for snake in data["board"]["snakes"]:
@@ -52,7 +51,12 @@ class Battlesnake(object):
         mySnake = snakes[0] # TODO: get snake by ID
         directions = Directions()
 
-        print(f"MOVE: {move}")
+        # Check for collision
+        walls = Walls()
+        directions = walls.wallCollision(data, directions, mySnake)
+
+        move = directions.bestDirection()
+        print(move)
         return {"move": move}
 
     @cherrypy.expose
