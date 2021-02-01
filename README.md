@@ -42,7 +42,7 @@ This is my implementation of the [Battlesnake API](https://docs.battlesnake.com/
 
 1. Sign in to [play.battlesnake.com](https://play.battlesnake.com/login/).
 
-2. Go [here to create a new Battlesnake](https://play.battlesnake.com/account/snakes/create/). Give it a meaningful name and complete the form using the URL for your Repl from above.
+2. Go [here to create a new Battlesnake](https://play.battlesnake.com/account/snakes/create/). Give it a meaningful name and complete the form using the URL from ngrok above.
 
 3. Once your Battlesnake has been saved you can [create a new game](https://play.battlesnake.com/account/games/create/) and add your Battlesnake to it. Type your Battlesnake's name into the search field and click "Add" to add it to the game. Then click "Create Game" to start the game.
 
