@@ -44,7 +44,7 @@ class Walls():
             south_result = 0
             direction.south = 0
 
-        result_json = {"north": north_result, "east": east_result, "west": west_result, "south": south_result}
+        # result_json = {"north": north_result, "east": east_result, "west": west_result, "south": south_result}
         # print "result_json: " + str(result_json)
         # return result_json
         return direction
