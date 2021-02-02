@@ -41,3 +41,28 @@ class Walls():
             direction.right += 1
 
         return direction
+    
+    def deadEndDetection(self, data, mySnake, direction):
+
+        head = mySnake.head
+        board = data["board"]
+
+        leftOfHead = head["x"] - 1
+        rightOfHead = head["x"] + 1
+        aboveHead = head["y"] - 1
+        belowHead = head["y"] + 1
+
+        deadEndDetectedUp = True
+        deadEndDetectedDown = True
+        deadEndDetectedLeft = True
+        deadEndDetectedRight = True
+
+        distanceToBlockUp = 0
+        distanceToBlockDown = 0
+        distanceToBlockLeft = 0
+        distanceToBlockRight = 0
+
+        # Check dead and top (up)
+
+
+        

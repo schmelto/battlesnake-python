@@ -54,6 +54,10 @@ class Battlesnake(object):
         # Check for collision
         walls = Walls()
         directions = walls.wallCollision(data, directions, mySnake)
+        # TODO: check for collition with other snake
+
+        #Check for dead ends
+        directions = walls.deadEndDetection(data, directions, mysnake)
 
         move = directions.bestDirection()
         print(move)
