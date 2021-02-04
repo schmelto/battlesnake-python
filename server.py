@@ -26,7 +26,7 @@ class Battlesnake(object):
     def start(self):
         # This function is called everytime your snake is entered into a game.
         # cherrypy.request.json contains information about the game that's about to be played.
-        data = cherrypy.request.json
+        # data = cherrypy.request.json
 
         print("START")
         return "ok"
@@ -51,16 +51,19 @@ class Battlesnake(object):
         mySnake = snakes[0] # TODO: get snake by ID
         directions = Directions()
 
+        directions = directions.checkForOwnBody(data, directions, mySnake)
+
         # Check for collision
         walls = Walls()
         directions = walls.wallCollision(data, directions, mySnake)
         # TODO: check for collition with other snake
 
         #Check for dead ends
-        # directions = walls.deadEndDetection(data, directions, mysnake)
+        # directions = walls.deadEndDetection(data, directions, mySnake)
 
         move = directions.bestDirection()
         print(move)
+        print(mySnake.head)
         return {"move": move}
 
     @cherrypy.expose
@@ -68,7 +71,7 @@ class Battlesnake(object):
     def end(self):
         # This function is called when a game your snake was in ends.
         # It's purely for informational purposes, you don't have to make any decisions here.
-        data = cherrypy.request.json
+        # data = cherrypy.request.json
 
         print("END")
         return "ok"

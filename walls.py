@@ -11,30 +11,27 @@ class Walls():
         width = game_json["board"]["width"]
         height = game_json["board"]["height"]
 
-        direction.left = 100
-        direction.right = 100
-        direction.down = 100
-        direction.up = 100
-
         if snake_head["x"] == 0:  # head on left side, don't go left
             direction.left = 0
-            direction.right -= 1
+            # direction.right -= 1
 
         if snake_head["x"] == width - 1:  # head on right side, don't go right
             direction.right = 0
-            direction.left -= 1
+            # direction.left -= 1
 
         if snake_head["y"] == 0:  # head on bottom, dont go down
             direction.down = 0
-            direction.up -= 1
+            # direction.up -= 1
 
         if snake_head["y"] == height - 1:  # head on top side, don't go up
             direction.up = 0
-            direction.down -= 1
+            # direction.down -= 1
 
         return direction
     
-    # def deadEndDetection(self, data, direction, mysnake):
+    def deadEndDetection(self, data, direction, mysnake):
+
+        return direction
 
     #     head = mySnake["head"]
     #     board = data["board"]
