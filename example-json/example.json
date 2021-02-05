@@ -21,8 +21,7 @@
                                 "length": 3,
                                 "shout": ""
                                 }],
-                                "food": [{"x": 8, "y": 6}, {"x": 5, "y": 5}
-                                ],
+                    "food": [{"x": 8, "y": 6}, {"x": 5, "y": 5}],
                     "hazards": []
                 },
         "you": {"id": "gs_S4Q94TrgrrBQf4hFRDdSbtvV",
