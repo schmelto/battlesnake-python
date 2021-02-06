@@ -52,7 +52,7 @@ class Battlesnake(object):
         mySnake = snakes[0] # TODO: get snake by ID
         directions = Directions()
         food = Food(data["board"]["food"], wantFood)
-        directions = food.goTowards(food.amClosest(snakes, mySnake), directions, mySnake)
+        # directions = food.goTowards(food.amClosest(snakes, mySnake), directions, mySnake)
         directions = directions.checkForOwnBody(data, directions, mySnake)
 
         # Check for collision
