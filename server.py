@@ -51,8 +51,9 @@ class Battlesnake(object):
 
         mySnake = snakes[0] # TODO: get snake by ID
         directions = Directions()
+
         food = Food(data["board"]["food"], wantFood)
-        # directions = food.goTowards(food.amClosest(snakes, mySnake), directions, mySnake)
+        directions = food.goTowards(food.amClosest(snakes, mySnake), directions, mySnake)
         directions = directions.checkForOwnBody(data, directions, mySnake)
 
         # Check for collision
@@ -62,10 +63,12 @@ class Battlesnake(object):
 
         #Check for dead ends
         # directions = walls.deadEndDetection(data, directions, mySnake)
-
+        print("up ", directions.up)
+        print("down ", directions.down)
+        print("left ", directions.left)
+        print("right ", directions.right)
         move = directions.bestDirection()
         print(move)
-        print(mySnake.head)
         return {"move": move}
 
     @cherrypy.expose

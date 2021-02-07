@@ -21,10 +21,10 @@ class Directions:
             if snake_head["y"] == pointInBody["y"] + 1 and snake_head["x"] == pointInBody["x"]:
                 directions.down = 0
 
-        print("up ", self.up)
-        print("down ", self.down)
-        print("left ", self.left)
-        print("right ", self.right)
+        # print("up ", self.up)
+        # print("down ", self.down)
+        # print("left ", self.left)
+        # print("right ", self.right)
         return directions
 
     def bestDirection(self):
@@ -47,9 +47,9 @@ class Directions:
             bestVal = self.left
             bestDir = "left"
         
-        print("up ", self.up)
-        print("down ", self.down)
-        print("left ", self.left)
-        print("right ", self.right)
+        # print("up ", self.up)
+        # print("down ", self.down)
+        # print("left ", self.left)
+        # print("right ", self.right)
 
         return bestDir
